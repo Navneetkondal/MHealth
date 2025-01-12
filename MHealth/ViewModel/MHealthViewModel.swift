@@ -152,7 +152,7 @@ extension HealthViewModel{
         
         var array:  [FoodDetail] = []
         activity.getFoodDishes(for: dish).forEach({ item in
-            if !array.contains(where:  { $0.id ==  item.id && $0.name == item.name}){
+            if !array.contains(where:  {$0.name == item.name}){
                 array.append(item)
             }
         })
@@ -360,7 +360,7 @@ extension HealthViewModel{
         if let firstIndex = activity.todaysActivity.meals.firstIndex(where: { $0.mealType == $0.mealType}){
             activity.todaysActivity.meals[firstIndex].meals.append(.init(name: "", calories: calories))
         } else{
-            activity.todaysActivity.meals.append(.init(mealType: meal, mealTimeStamp: timeStamp, meals:[.init(name: "", calories: calories)] ))
+            activity.todaysActivity.meals.append(.init(mealType: meal, mealTimeStamp: timeStamp, meals:[.init(name: "Quick added calories", calories: calories)] ))
         }
         activity.todaysActivity.isManual = true
         let targetValue = activity.todaysActivity.target.target ?? 0

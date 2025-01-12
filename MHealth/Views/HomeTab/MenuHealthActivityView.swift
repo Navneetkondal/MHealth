@@ -156,7 +156,7 @@ extension MenuHealthActivityView{
         if referenceTag == ActivityTypeEnum.Food.rawValue{
             router.navigate(to: .Food(action.title, viewModel.getFoodDishes(for: .init(rawValue: action.title)) ))
         } else if  referenceTag ==  MHealthStringConstant.AddCalories.rawValue{
-            router.navigate(to: .AddCalories(viewModel.uiViewModel.getCurrentMeal(), .addCalories))
+            router.navigate(to: .AddCalories(viewModel.uiViewModel.getCurrentMeal(), .addCalories, []))
         }
     }
     

@@ -15,7 +15,7 @@ enum MHealthNavigationRoute: Routable {
     case Food(String, [FoodDetail])
     case EditProfile(MHealthUser)
     case AddFood(String, [FoodNutrients])
-    case AddCalories(String, MealRecord)
+    case AddCalories(String, MealRecord, [FoodDetail])
     
     var body: some View {
         switch self {
@@ -31,8 +31,8 @@ enum MHealthNavigationRoute: Routable {
                 LoginView()
             case .AddFood(let mealType, let foodNutrients):
                 AddFoodView(foodNutrients: foodNutrients, foodType: mealType)
-            case .AddCalories(let mealType, let mealRecord):
-                LogMealView(recordType: mealRecord, mealType: mealType)
+            case .AddCalories(let mealType,let mealRecord,let dishes):
+                LogMealView(recordType: mealRecord, mealType: mealType, dishesData: dishes)
         }
     }
     

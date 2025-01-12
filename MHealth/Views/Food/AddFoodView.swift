@@ -14,7 +14,6 @@ struct AddFoodView: View {
     @EnvironmentObject var viewModel: HealthViewModel
     @State var foodName: String = ""
     @State private var toast: Toast? = nil
-
     @State var foodNutrients: [FoodNutrients]
     var foodType: String
     
@@ -121,11 +120,3 @@ extension AddFoodView{
     }
 }
 
-
-extension String {
-    var isNumber: Bool {
-        return self.range(
-            of: "^[0-9]*$", // 1
-            options: .regularExpression) != nil
-    }
-}

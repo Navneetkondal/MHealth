@@ -31,42 +31,47 @@ struct FoodView: View {
                         FoodRowView(foodTypeText: foodTypeText, dish: $item, selectedDish: $selectedDish)
                             .padding(.zero)
                     }
-                    .listRowInsets(.init(top:0, leading: 10, bottom: 0, trailing: 10))
-                    .background(.clear)
-                    .listRowBackground(Color.clear)
-                    .listRowSeparator(.hidden)
+                    .listRowInsets(.init(top:0, leading: 0, bottom: 0, trailing: 0))
+                    .background(.lightViewBackground)
+                    .listRowBackground(Color.lightViewBackground)
+                    .listRowSeparator(.automatic)
+                    .selectionDisabled()
+                    .listRowSeparatorTint(Color.darkGray3)
                 }
-                .environment(\.defaultMinListRowHeight, 60)
-                .listStyle(.plain)
-                .background(.clear)
-                .foregroundStyle(.clear)
+                .listStyle(InsetGroupedListStyle())
+                .background(.lightViewBackground)
+                .scrollIndicators(.hidden)
+                .ignoresSafeArea(.all)
             } else{
                 Text("Frequently added")
                     .foregroundColor(Color.darkGray3)
                     .font(MFontConstant.semiBold14.font)
-                    .padding(5)
                 List{
                     ForEach($foodList, id: \.id){ $item in
                         FoodRowView(foodTypeText: foodTypeText, dish: $item, selectedDish: $selectedDish)
                             .padding(.zero)
                     }
-                    .listRowInsets(.init(top:0, leading: 10, bottom: 0, trailing: 10))
-                    .background(.clear)
-                    .listRowBackground(Color.clear)
-                    .listRowSeparator(.hidden)
+                    .listRowInsets(.init(top:0, leading: 0, bottom: 0, trailing: 0))
+                    .background(.orange)
+                    .listRowBackground(Color.red)
+                    .listRowSeparator(.automatic)
+                    .selectionDisabled()
+                    .selectionDisabled(false)
+                    .listRowSeparatorTint(Color.darkGray3)
                 }
-                .environment(\.defaultMinListRowHeight, 60)
-                .listStyle(.plain)
-                .background(.clear)
-                .foregroundStyle(.clear)
+                .listStyle(InsetGroupedListStyle())
+                .background(.lightViewBackground)
+                .scrollIndicators(.hidden)
+                .ignoresSafeArea(.all)
             }
             
             Spacer()
             if selectedDish.name != ""{
                 VStack(alignment:.center, spacing: .zero){
                     Button(action:{
-                        viewModel.addFood(foodTypeText, food: selectedDish)
-                        router.navigate(to: .AddCalories(foodTypeText,.LogMeal))
+                        var meals =  viewModel.getFoodDishes(for: .init(rawValue: foodTypeText))
+                        meals.append(selectedDish)
+                        router.navigate(to: .AddCalories(foodTypeText,.LogMeal,meals ))
                     }){
                         Text("Next")
                             .foregroundColor(Color.mlabel)
@@ -163,7 +168,7 @@ extension FoodView{
                 Spacer()
             }
             .frame(height: 50)
-            .padding([.leading, .trailing], 15)
+            .padding([.leading, .trailing], 10)
             .padding([.top, .bottom], 10)
             .background(.lightViewBackground)
         }

@@ -36,17 +36,20 @@ struct LogMealView: View {
                 CaloriesPickerView
             } else if recordType == .LogMeal{
                 VStack(alignment: .leading, spacing: .zero){
-                    MReusableCardView(.lightViewBackground, curve: 25) {
+                    MReusableCardView(.lightViewBackground, curve: 20) {
                         CardRowView(title: $totalCaloriesForMeal, subTitle: $totalCarbFartProtien, iconString: nil){
-                            router.navigate(to: .AddCalories(mealType, .addCalories))
+                            router.navigate(to: .AddCalories(mealType, .addCalories, []))
                         }
                     }
+                    .padding([.leading, .trailing], 25)
                     
                     Text("Foods")
                         .foregroundColor(.gray)
                         .font(MFontConstant.regular13.font)
+                        .padding([.leading, .trailing], 25)
                         .padding(.top, 15)
                         .padding(.bottom, 5)
+                    
                     
                     VStack(alignment: .leading, spacing: .zero){
                         List{
@@ -55,30 +58,37 @@ struct LogMealView: View {
                                 }
                             }
                             .listRowInsets(.init(top:0, leading: 0, bottom: 0, trailing: 0))
-                            .background(.clear)
-                            .listRowBackground(Color.clear)
-                            .listRowSeparator(.hidden)
+                            .background(.lightViewBackground)
+                            .listRowBackground(Color.lightViewBackground)
+                            .listRowSeparator(.automatic)
+                            .selectionDisabled()
+                            .listRowSeparatorTint(Color.darkGray3)
                             CardRowView(title: .constant("Add food"), subTitle: .constant(""), iconString: .sysImg_plus){
                                 router.navigate(to: .Food(mealType, viewModel.getFoodDishes(for: .init(rawValue: mealType))))
                             }
                             .listRowInsets(.init(top:0, leading: 0, bottom: 0, trailing: 0))
-                            .background(.clear)
-                            .listRowBackground(Color.clear)
-                            .listRowSeparator(.hidden)
+                            .background(.lightViewBackground)
+                            .listRowBackground(Color.lightViewBackground)
+                            .listRowSeparator(.automatic)
+                            .selectionDisabled()
+                            .listRowSeparatorTint(Color.darkGray3)
                             CardRowView(title: .constant("Add Calories"), subTitle: .constant(""), iconString: .sysImg_plus){
-                                router.navigate(to: .AddCalories(mealType, .addCalories))
+                                router.navigate(to: .AddCalories(mealType, .addCalories, []))
                             }
                             .listRowInsets(.init(top:0, leading: 0, bottom: 0, trailing: 0))
-                            .background(.clear)
-                            .listRowBackground(Color.clear)
-                            .listRowSeparator(.hidden)
+                            .background(.lightViewBackground)
+                            .listRowBackground(Color.lightViewBackground)
+                            .listRowSeparator(.automatic)
+                            .selectionDisabled()
+                            .listRowSeparatorTint(Color.darkGray3)
                         }
-                        .listStyle(.plain)
+                        .listStyle(InsetGroupedListStyle())
+                        .background(.lightViewBackground)
                         .ignoresSafeArea(.all)
                         .scrollIndicators(.hidden)
+                        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                     }
                 }
-                .padding(12)
             }
             FooterView
         }
@@ -118,7 +128,6 @@ struct LogMealView: View {
                 let total = viewModel.setTotalCalCarbFat(for: .init(rawValue: mealType))
                 totalCaloriesForMeal = total.totalCaloriesForMeal
                 totalCarbFartProtien = total.totalCarbFartProtien
-                dishesData = viewModel.getFoodDishes(for: .init(rawValue: mealType))
             }
         }
     }

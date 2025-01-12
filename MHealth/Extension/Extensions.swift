@@ -24,6 +24,12 @@ extension String{
     func removeSpaces() -> String{
         self.trimmingCharacters(in: .whitespaces)
     }
+
+    var isNumber: Bool {
+        return self.range(
+            of: "^[0-9]*$", // 1
+            options: .regularExpression) != nil
+    }
 }
 
 private struct SafeAreaInsetsKey: EnvironmentKey {

@@ -27,10 +27,12 @@ struct ProfileView: View {
             
             // LogoutButton Section
             LogoutButton
+
             Spacer()
         }
         .background(Color.viewbackground)
         .navigationBarHidden(true)
+        .showMToastView(toast: $loginViewModel.toast)
     }
 }
 
@@ -141,6 +143,5 @@ extension ProfileView{
             loginViewModel.removeCredentials()
             router.navigateToRoot()
         }
-        .showMToastView(toast: $loginViewModel.toast)
     }
 }

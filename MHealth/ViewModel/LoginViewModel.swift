@@ -135,11 +135,10 @@ class LoginViewModel: ObservableObject {
     
     func removeCredentials(){
         UserDefaults.standard.removeObject(forKey: "email")
-       // authState.currentState = .unauthorised
-        updateLoginStatus(.unauthorised)
-        toast = Toast(style: .success, message: "You have successfully logged out!!")
         UserDefaults.standard.removeObject(forKey: "password")
         UserDefaults.standard.removeObject(forKey: "isLoggedIn")
+        updateLoginStatus(.unauthorised)
+        toast = Toast(style: .success, message: "You have successfully logged out!!")
     }
     
     func setSavedEmailId(_ email: String?){
