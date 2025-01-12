@@ -1,0 +1,107 @@
+{
+    "Steps":
+    {
+        "id" : "2229fdf5-89d6-4161-a909-49c89826b3e5",
+        "todaysActivity" :
+        {
+            "date" : null,
+            "data" :  "",
+            "message" : "",
+            "target" : {
+                "target" : 6000,
+                "unit" : "steps",
+                "units" : [],
+                "qnt" : null,
+                "name" : "",
+                "activityType" : "Steps"
+            },
+            "value" : 0,
+            "isManual" : false
+        },
+        "prevActivity" : [],
+        "message" : "",
+        "image" : "",
+        "name" : "Steps",
+        "isManual" : false,
+        "typeId" : "Steps"
+    },
+    "Food":
+    {
+        "id" : "1b50718b-a8aa-43b8-969c-067b20ae33aa",
+        "todaysActivity" :
+        {
+            "date" : null,
+            "data" :  "",
+            "message" : "",
+            "target" : {
+                "target" : 2000,
+                "unit" : "kcal",
+                "units" : [],
+                "qnt" : null,
+                "name" : "",
+                "activityType" : "Food"
+            },
+            "value" : 0,
+            "isManual" : false
+        },
+        "prevActivity" : [],
+        "message" : "",
+        "image" : "",
+        "name" : "Food",
+        "isManual" : false,
+        "typeId" : "Food"
+    },
+    "Sleep":
+    {
+        "id" : "6ff54690-7403-4ae5-92ff-40e1a2c399d0",
+        "todaysActivity" :
+        {
+            "date" : null,
+            "data" :  "",
+            "message" : "",
+            "target" : {
+                "target" : 480,
+                "unit" : "min",
+                "units" : [],
+                "qnt" : null,
+                "name" : "",
+                "activityType" : "Sleep"
+            },
+            "value" : 0,
+            "isManual" : false
+        },
+        "prevActivity" : [],
+        "message" : "",
+        "image" : "",
+        "name" : "Sleep",
+        "isManual" : false,
+        "typeId" : "Sleep"
+    },
+    "Water":
+    {
+        "id" : "30b38500-5035-4ee2-95b8-18187f005b2a",
+        "todaysActivity" :
+        {
+            "date" : null,
+            "data" :  "",
+            "message" : "",
+            "target" : {
+                "target" : 2000,
+                "unit" : "ml",
+                "units" : [],
+                "qnt" : 250,
+                "name" : "",
+                "activityType" : "Water"
+            },
+            "value" : 0,
+            "isManual" : false
+        },
+        "prevActivity" : [],
+        "message" : "",
+        "image" : "",
+        "name" : "Water",
+        "isManual" : false,
+        "typeId" : "Water"
+    }
+}
+

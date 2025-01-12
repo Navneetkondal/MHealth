@@ -1,0 +1,34 @@
+[
+    {
+        "target": 6000,
+        "unit": "steps",
+        "units": [],
+        "qnt": null,
+        "name": "",
+        "activityType": "Steps"
+    },
+    {
+        "target": 480,
+        "unit": "min",
+        "units": [],
+        "qnt": null,
+        "name": "",
+        "activityType": "Sleep"
+    },
+    {
+        "target": 2000,
+        "unit": "kcal",
+        "units": [],
+        "qnt": null,
+        "name": "",
+        "activityType": "Food"
+    },
+    {
+        "target": 2000,
+        "unit": "ml",
+        "units": [],
+        "qnt": 250,
+        "name": "",
+        "activityType": "Water"
+    }
+]

@@ -1,0 +1,763 @@
+[
+    {
+        "name": "Grilled Vegetable Salad",
+        "nutrients": [
+            {
+                "unit": "kcal",
+                "type": "caloriesPer",
+                "isRequired": true,
+                "value": "150"
+            },
+            {
+                "unit": "g",
+                "type": "carbohydrates",
+                "isRequired": true,
+                "value": "20"
+            },
+            {
+                "unit": "g",
+                "type": "fat",
+                "isRequired": true,
+                "value": "8"
+            },
+            {
+                "unit": "g",
+                "type": "protien",
+                "isRequired": true,
+                "value": "3"
+            },
+            {
+                "unit": "g",
+                "type": "saturatedFat",
+                "isRequired": false,
+                "value": "1"
+            },
+            {
+                "unit": "g",
+                "type": "transFat",
+                "isRequired": false,
+                "value": "0"
+            },
+            {
+                "unit": "mg",
+                "type": "cholesterol",
+                "isRequired": false,
+                "value": "0"
+            },
+            {
+                "unit": "mg",
+                "type": "sodium",
+                "isRequired": true,
+                "value": "100"
+            },
+            {
+                "unit": "mg",
+                "type": "potassium",
+                "isRequired": true,
+                "value": "400"
+            },
+            {
+                "unit": "g",
+                "type": "fibre",
+                "isRequired": true,
+                "value": "5"
+            },
+            {
+                "unit": "g",
+                "type": "sugars",
+                "isRequired": true,
+                "value": "6"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminA900",
+                "isRequired": true,
+                "value": "450"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminC90",
+                "isRequired": true,
+                "value": "50"
+            },
+            {
+                "unit": "%",
+                "type": "calcium1300",
+                "isRequired": true,
+                "value": "60"
+            },
+            {
+                "unit": "%",
+                "type": "iron18",
+                "isRequired": true,
+                "value": "1.5"
+            }
+        ]
+    },
+    {
+        "name": "Chana Masala (Indian)",
+        "nutrients": [
+            {
+                "unit": "kcal",
+                "type": "caloriesPer",
+                "isRequired": true,
+                "value": "220"
+            },
+            {
+                "unit": "g",
+                "type": "carbohydrates",
+                "isRequired": true,
+                "value": "30"
+            },
+            {
+                "unit": "g",
+                "type": "fat",
+                "isRequired": true,
+                "value": "7"
+            },
+            {
+                "unit": "g",
+                "type": "protien",
+                "isRequired": true,
+                "value": "10"
+            },
+            {
+                "unit": "g",
+                "type": "saturatedFat",
+                "isRequired": false,
+                "value": "1.5"
+            },
+            {
+                "unit": "g",
+                "type": "transFat",
+                "isRequired": false,
+                "value": "0"
+            },
+            {
+                "unit": "mg",
+                "type": "cholesterol",
+                "isRequired": false,
+                "value": "0"
+            },
+            {
+                "unit": "mg",
+                "type": "sodium",
+                "isRequired": true,
+                "value": "300"
+            },
+            {
+                "unit": "mg",
+                "type": "potassium",
+                "isRequired": true,
+                "value": "550"
+            },
+            {
+                "unit": "g",
+                "type": "fibre",
+                "isRequired": true,
+                "value": "8"
+            },
+            {
+                "unit": "g",
+                "type": "sugars",
+                "isRequired": true,
+                "value": "5"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminA900",
+                "isRequired": true,
+                "value": "12"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminC90",
+                "isRequired": true,
+                "value": "15"
+            },
+            {
+                "unit": "%",
+                "type": "calcium1300",
+                "isRequired": true,
+                "value": "4"
+            },
+            {
+                "unit": "%",
+                "type": "iron18",
+                "isRequired": true,
+                "value": "4.5"
+            }
+        ]
+    },
+    {
+        "name": "Palak Paneer (Indian)",
+        "nutrients": [
+            {
+                "unit": "kcal",
+                "type": "caloriesPer",
+                "isRequired": true,
+                "value": "280"
+            },
+            {
+                "unit": "g",
+                "type": "carbohydrates",
+                "isRequired": true,
+                "value": "12"
+            },
+            {
+                "unit": "g",
+                "type": "fat",
+                "isRequired": true,
+                "value": "22"
+            },
+            {
+                "unit": "g",
+                "type": "protien",
+                "isRequired": true,
+                "value": "14"
+            },
+            {
+                "unit": "g",
+                "type": "saturatedFat",
+                "isRequired": false,
+                "value": "8"
+            },
+            {
+                "unit": "g",
+                "type": "transFat",
+                "isRequired": false,
+                "value": "0"
+            },
+            {
+                "unit": "mg",
+                "type": "cholesterol",
+                "isRequired": false,
+                "value": "45"
+            },
+            {
+                "unit": "mg",
+                "type": "sodium",
+                "isRequired": true,
+                "value": "500"
+            },
+            {
+                "unit": "mg",
+                "type": "potassium",
+                "isRequired": true,
+                "value": "800"
+            },
+            {
+                "unit": "g",
+                "type": "fibre",
+                "isRequired": true,
+                "value": "4"
+            },
+            {
+                "unit": "g",
+                "type": "sugars",
+                "isRequired": true,
+                "value": "4"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminA900",
+                "isRequired": true,
+                "value": "2"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminC90",
+                "isRequired": true,
+                "value": "5"
+            },
+            {
+                "unit": "%",
+                "type": "calcium1300",
+                "isRequired": true,
+                "value": "7"
+            },
+            {
+                "unit": "%",
+                "type": "iron18",
+                "isRequired": true,
+                "value": "5"
+            }
+        ]
+    },
+    {
+        "name": "Baingan Bharta (Indian)",
+        "nutrients": [
+            {
+                "unit": "kcal",
+                "type": "caloriesPer",
+                "isRequired": true,
+                "value": "150"
+            },
+            {
+                "unit": "g",
+                "type": "carbohydrates",
+                "isRequired": true,
+                "value": "20"
+            },
+            {
+                "unit": "g",
+                "type": "fat",
+                "isRequired": true,
+                "value": "8"
+            },
+            {
+                "unit": "g",
+                "type": "protien",
+                "isRequired": true,
+                "value": "4"
+            },
+            {
+                "unit": "g",
+                "type": "saturatedFat",
+                "isRequired": false,
+                "value": "1"
+            },
+            {
+                "unit": "g",
+                "type": "transFat",
+                "isRequired": false,
+                "value": "0"
+            },
+            {
+                "unit": "mg",
+                "type": "cholesterol",
+                "isRequired": false,
+                "value": "0"
+            },
+            {
+                "unit": "mg",
+                "type": "sodium",
+                "isRequired": true,
+                "value": "200"
+            },
+            {
+                "unit": "mg",
+                "type": "potassium",
+                "isRequired": true,
+                "value": "550"
+            },
+            {
+                "unit": "g",
+                "type": "fibre",
+                "isRequired": true,
+                "value": "6"
+            },
+            {
+                "unit": "g",
+                "type": "sugars",
+                "isRequired": true,
+                "value": "7"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminA900",
+                "isRequired": true,
+                "value": "4"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminC90",
+                "isRequired": true,
+                "value": "2"
+            },
+            {
+                "unit": "%",
+                "type": "calcium1300",
+                "isRequired": true,
+                "value": "8"
+            },
+            {
+                "unit": "%",
+                "type": "iron18",
+                "isRequired": true,
+                "value": "2.4"
+            }
+        ]
+    },
+    {
+        "name": "Aloo Gobi (Indian)",
+        "nutrients": [
+            {
+                "unit": "kcal",
+                "type": "caloriesPer",
+                "isRequired": true,
+                "value": "180"
+            },
+            {
+                "unit": "g",
+                "type": "carbohydrates",
+                "isRequired": true,
+                "value": "28"
+            },
+            {
+                "unit": "g",
+                "type": "fat",
+                "isRequired": true,
+                "value": "8"
+            },
+            {
+                "unit": "g",
+                "type": "protien",
+                "isRequired": true,
+                "value": "7"
+            },
+            {
+                "unit": "g",
+                "type": "saturatedFat",
+                "isRequired": false,
+                "value": "4"
+            },
+            {
+                "unit": "g",
+                "type": "transFat",
+                "isRequired": false,
+                "value": "1"
+            },
+            {
+                "unit": "mg",
+                "type": "cholesterol",
+                "isRequired": false,
+                "value": "0"
+            },
+            {
+                "unit": "mg",
+                "type": "sodium",
+                "isRequired": true,
+                "value": "250"
+            },
+            {
+                "unit": "mg",
+                "type": "potassium",
+                "isRequired": true,
+                "value": "600"
+            },
+            {
+                "unit": "g",
+                "type": "fibre",
+                "isRequired": true,
+                "value": "6"
+            },
+            {
+                "unit": "g",
+                "type": "sugars",
+                "isRequired": true,
+                "value": "5"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminA900",
+                "isRequired": true,
+                "value": "1.4"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminC90",
+                "isRequired": true,
+                "value": "2.6"
+            },
+            {
+                "unit": "%",
+                "type": "calcium1300",
+                "isRequired": true,
+                "value": "6.8"
+            },
+            {
+                "unit": "%",
+                "type": "iron18",
+                "isRequired": true,
+                "value": "6"
+            }
+        ]
+    },
+    {
+        "name": "Methi Thepla (Indian)",
+        "nutrients": [
+            {
+                "unit": "kcal",
+                "type": "caloriesPer",
+                "isRequired": true,
+                "value": "220"
+            },
+            {
+                "unit": "g",
+                "type": "carbohydrates",
+                "isRequired": true,
+                "value": "30"
+            },
+            {
+                "unit": "g",
+                "type": "fat",
+                "isRequired": true,
+                "value": "8"
+            },
+            {
+                "unit": "g",
+                "type": "protien",
+                "isRequired": true,
+                "value": "6"
+            },
+            {
+                "unit": "g",
+                "type": "saturatedFat",
+                "isRequired": false,
+                "value": "1"
+            },
+            {
+                "unit": "g",
+                "type": "transFat",
+                "isRequired": false,
+                "value": "0"
+            },
+            {
+                "unit": "mg",
+                "type": "cholesterol",
+                "isRequired": false,
+                "value": "0"
+            },
+            {
+                "unit": "mg",
+                "type": "sodium",
+                "isRequired": true,
+                "value": "150"
+            },
+            {
+                "unit": "mg",
+                "type": "potassium",
+                "isRequired": true,
+                "value": "300"
+            },
+            {
+                "unit": "g",
+                "type": "fibre",
+                "isRequired": true,
+                "value": "4"
+            },
+            {
+                "unit": "g",
+                "type": "sugars",
+                "isRequired": true,
+                "value": "2"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminA900",
+                "isRequired": true,
+                "value": "8.4"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminC90",
+                "isRequired": true,
+                "value": "8.6"
+            },
+            {
+                "unit": "%",
+                "type": "calcium1300",
+                "isRequired": true,
+                "value": "6.2"
+            },
+            {
+                "unit": "%",
+                "type": "iron18",
+                "isRequired": true,
+                "value": "4"
+            }
+        ]
+    },
+    {
+        "name": "Vegetable Biryani (Indian)",
+        "nutrients": [
+            {
+                "unit": "kcal",
+                "type": "caloriesPer",
+                "isRequired": true,
+                "value": "270"
+            },
+            {
+                "unit": "g",
+                "type": "carbohydrates",
+                "isRequired": true,
+                "value": "45"
+            },
+            {
+                "unit": "g",
+                "type": "fat",
+                "isRequired": true,
+                "value": "8"
+            },
+            {
+                "unit": "g",
+                "type": "protien",
+                "isRequired": true,
+                "value": "6"
+            },
+            {
+                "unit": "g",
+                "type": "saturatedFat",
+                "isRequired": false,
+                "value": "1.5"
+            },
+            {
+                "unit": "g",
+                "type": "transFat",
+                "isRequired": false,
+                "value": "0"
+            },
+            {
+                "unit": "mg",
+                "type": "cholesterol",
+                "isRequired": false,
+                "value": "0"
+            },
+            {
+                "unit": "mg",
+                "type": "sodium",
+                "isRequired": true,
+                "value": "550"
+            },
+            {
+                "unit": "mg",
+                "type": "potassium",
+                "isRequired": true,
+                "value": "400"
+            },
+            {
+                "unit": "g",
+                "type": "fibre",
+                "isRequired": true,
+                "value": "5"
+            },
+            {
+                "unit": "g",
+                "type": "sugars",
+                "isRequired": true,
+                "value": "8"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminA900",
+                "isRequired": true,
+                "value": "3"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminC90",
+                "isRequired": true,
+                "value": "4.6"
+            },
+            {
+                "unit": "%",
+                "type": "calcium1300",
+                "isRequired": true,
+                "value": "7"
+            },
+            {
+                "unit": "%",
+                "type": "iron18",
+                "isRequired": true,
+                "value": "8.6"
+            }
+        ]
+    },
+    {
+        "name": "Lentil Soup (Indian)",
+        "nutrients": [
+            {
+                "unit": "kcal",
+                "type": "caloriesPer",
+                "isRequired": true,
+                "value": "200"
+            },
+            {
+                "unit": "g",
+                "type": "carbohydrates",
+                "isRequired": true,
+                "value": "30"
+            },
+            {
+                "unit": "g",
+                "type": "fat",
+                "isRequired": true,
+                "value": "6"
+            },
+            {
+                "unit": "g",
+                "type": "protien",
+                "isRequired": true,
+                "value": "10"
+            },
+            {
+                "unit": "g",
+                "type": "saturatedFat",
+                "isRequired": false,
+                "value": "1"
+            },
+            {
+                "unit": "g",
+                "type": "transFat",
+                "isRequired": false,
+                "value": "0"
+            },
+            {
+                "unit": "mg",
+                "type": "cholesterol",
+                "isRequired": false,
+                "value": "0"
+            },
+            {
+                "unit": "mg",
+                "type": "sodium",
+                "isRequired": true,
+                "value": "400"
+            },
+            {
+                "unit": "mg",
+                "type": "potassium",
+                "isRequired": true,
+                "value": "800"
+            },
+            {
+                "unit": "g",
+                "type": "fibre",
+                "isRequired": true,
+                "value": "5"
+            },
+            {
+                "unit": "g",
+                "type": "sugars",
+                "isRequired": true,
+                "value": "8"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminA900",
+                "isRequired": true,
+                "value": "6"
+            },
+            {
+                "unit": "%",
+                "type": "vitaminC90",
+                "isRequired": true,
+                "value": "1.6"
+            },
+            {
+                "unit": "%",
+                "type": "calcium1300",
+                "isRequired": true,
+                "value": "6"
+            },
+            {
+                "unit": "%",
+                "type": "iron18",
+                "isRequired": true,
+                "value": "4.2"
+            }
+        ]
+    }
+]
+ 
